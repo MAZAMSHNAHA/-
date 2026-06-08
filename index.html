@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.Z.M.A Android - מערכות מותאמות אישית לנגני אנדרואיד</title>
+    <!-- שימוש ב-Tailwind CSS לעיצוב מהיר ומודרני -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- פונט Google Assistant לעברית -->
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Assistant', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 flex flex-col min-h-screen">
+
+    <!-- סרגל ניווט -->
+    <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <!-- שימוש בלוגו בסרגל הניווט -->
+                <img src="logo.png" alt="M.Z.M.A Logo" class="w-10 h-10 object-contain rounded-md">
+                <div class="text-xl font-bold text-[#1c1cff] tracking-wider">M.Z.M.A <span class="text-slate-300 text-sm font-normal">Android</span></div>
+            </div>
+            <nav class="space-x-4 space-x-reverse text-sm md:text-base">
+                <a href="#about" class="hover:text-[#4d4dff] transition">אודות</a>
+                <a href="#features" class="hover:text-[#4d4dff] transition">יתרונות</a>
+                <a href="#order" class="bg-[#1c1cff] hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded transition">הזמנת גרסה</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- אזור ראשי (Hero) -->
+    <section class="max-w-6xl mx-auto px-4 py-12 md:py-20 flex flex-col items-center text-center">
+        <!-- תמונת לוגו מרכזית גדולה יותר -->
+        <div class="mb-6">
+            <img src="logo.png" alt="M.Z.M.A Android" class="w-32 h-32 md:w-40 md:h-40 object-contain mx-auto drop-shadow-[0_0_15px_rgba(28,28,255,0.3)]">
+        </div>
+        
+        <span class="bg-[#1c1cff]/10 text-[#4d4dff] text-xs font-semibold px-3 py-1 rounded-full mb-4 border border-[#1c1cff]/20">שדרוג והתאמת מערכות הפעלה</span>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">הפק את המרב מנגן האנדרואיד שלך</h1>
+        <p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-8">
+            בנייה והתאמה אישית של גרסאות קושחה (ROMs) ומערכות הפעלה לסטרימרים, מערכות מולטימדיה לרכב ונגני אנדרואיד שונים מבית <span class="text-[#4d4dff] font-semibold">M.Z.M.A</span>. חוויית שימוש מהירה, חלקה ונטולת הפרעות.
+        </p>
+        <div class="flex gap-4">
+            <a href="#order" class="bg-[#1c1cff] hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg shadow-blue-900/20 transition text-lg">
+                להזמנת גרסה מותאמת
+            </a>
+            <a href="#about" class="border border-slate-700 hover:border-slate-500 py-3 px-8 rounded-lg transition text-lg">
+                קרא עוד
+            </a>
+        </div>
+    </section>
+
+    <!-- אודות -->
+    <section id="about" class="bg-slate-900/50 py-16 border-y border-slate-850">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6 text-center text-[#4d4dff]">קצת עלי ועל השירות</h2>
+            <p class="text-slate-300 leading-relaxed text-center text-lg">
+                שלום! אני מתמחה בפיתוח, התאמה וייעול של מערכות הפעלה מבוססות אנדרואיד עבור נגנים, סטרימרים ומערכות מולטימדיה תחת המותג <strong>M.Z.M.A Android</strong>. 
+                מכשירים רבים מגיעים מהמפעל עם מערכות איטיות, עמוסות באפליקציות מיותרות או ללא תמיכה נאותה בעברית ובשירותי Google. 
+                העבודה שלי היא לנקות, לייעל ולהתאים את המערכת בדיוק לצרכים שלכם, תוך שמירה על יציבות מרבית וחוויית משתמש משופרת.
+            </p>
+        </div>
+    </section>
+
+    <!-- יתרונות הגרסה -->
+    <section id="features" class="max-w-6xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-12 text-center text-[#4d4dff]">מה תקבלו בגרסאות שלי?</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- יתרון 1 -->
+            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                <div class="bg-[#1c1cff]/10 text-[#4d4dff] w-12 h-12 flex items-center justify-center rounded-lg mb-4 text-xl font-bold">🚀</div>
+                <h3 class="text-xl font-semibold mb-2">מהירות וביצועים</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">הסרת תוכנות מיותרות (Bloatware) שמאטות את המכשיר וביצוע אופטימיזציה לניצול נכון של הזיכרון והמעבד.</p>
+            </div>
+            <!-- יתרון 2 -->
+            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                <div class="bg-[#1c1cff]/10 text-[#4d4dff] w-12 h-12 flex items-center justify-center rounded-lg mb-4 text-xl font-bold">🌐</div>
+                <h3 class="text-xl font-semibold mb-2">תמיכה מלאה והתאמה</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">שילוב עברית מלאה, חנות אפליקציות מעודכנת, הגדרות מקלדת נוחות והתאמה של אפליקציות צד-שלישי נפוצות.</p>
+            </div>
+            <!-- יתרון 3 -->
+            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                <div class="bg-[#1c1cff]/10 text-[#4d4dff] w-12 h-12 flex items-center justify-center rounded-lg mb-4 text-xl font-bold">🛡️</div>
+                <h3 class="text-xl font-semibold mb-2">יציבות וליווי</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">הגרסאות נבדקות בקפידה על מכשירים תואמים כדי להבטיח עבודה רציפה ללא קריסות, לצד תמיכה טכנית במידת הצורך.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- דף הזמנה -->
+    <section id="order" class="bg-slate-900/30 py-16 border-t border-slate-850 flex-grow">
+        <div class="max-w-xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-[#4d4dff] mb-2">הזמנת גרסה מותאמת</h2>
+                <p class="text-slate-400">מלאו את הפרטים וההזמנה תיפתח בתיבת המייל שלכם מוכנה לשליחה ישירה לתיאום תשלום (ביט/פייבוקס/העברה).</p>
+            </div>
+
+            <!-- שליחת הטופס דרך פונקציית JavaScript -->
+            <form onsubmit="sendOrderEmail(event)" class="space-y-6 bg-slate-900 p-8 rounded-2xl border border-slate-800">
+
+                <div>
+                    <label for="name" class="block text-sm font-medium text-slate-300 mb-1">שם מלא *</label>
+                    <input type="text" id="name" required class="w-full bg-slate-950 border border-slate-850 rounded-lg py-2.5 px-4 text-slate-100 text-right focus:outline-none focus:border-[#1c1cff] transition">
+                </div>
+
+                <div>
+                    <label for="phone" class="block text-sm font-medium text-slate-300 mb-1">מספר טלפון ליצירת קשר *</label>
+                    <input type="tel" id="phone" required placeholder="לדוגמה: 0501234567" class="w-full bg-slate-950 border border-slate-850 rounded-lg py-2.5 px-4 text-slate-100 text-right focus:outline-none focus:border-[#1c1cff] transition">
+                </div>
+
+                <div>
+                    <label for="device" class="block text-sm font-medium text-slate-300 mb-1">דגם המכשיר / הנגן שברשותך *</label>
+                    <input type="text" id="device" required placeholder="לדוגמה: Xiaomi Mi Box, מולטימדיה לרכב דגם X..." class="w-full bg-slate-950 border border-slate-850 rounded-lg py-2.5 px-4 text-slate-100 text-right focus:outline-none focus:border-[#1c1cff] transition">
+                </div>
+
+                <div>
+                    <label for="version_type" class="block text-sm font-medium text-slate-300 mb-1">סוג הגרסה המבוקשת</label>
+                    <select id="version_type" class="w-full bg-slate-950 border border-slate-850 rounded-lg py-2.5 px-4 text-slate-100 text-right focus:outline-none focus:border-[#1c1cff] transition">
+                        <option value="מערכת נקייה ומהירה (Lite)" class="bg-slate-950 text-slate-100">מערכת נקייה ומהירה (Lite)</option>
+                        <option value="גרסה מלאה עם חבילת אפליקציות מותקנת" class="bg-slate-950 text-slate-100">גרסה מלאה עם חבילת אפליקציות מותקנת</option>
+                        <option value="התאמה אישית מיוחדת (Custom)" class="bg-slate-950 text-slate-100">התאמה אישית מיוחדת (Custom)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="notes" class="block text-sm font-medium text-slate-300 mb-1">דרישות מיוחדות או הערות (אופציונלי)</label>
+                    <textarea id="notes" rows="3" placeholder="פרט כאן אם יש אפליקציות ספציפיות שחשובות לך או בעיות נוכחיות במכשיר..." class="w-full bg-slate-950 border border-slate-850 rounded-lg py-2.5 px-4 text-slate-100 text-right focus:outline-none focus:border-[#1c1cff] transition"></textarea>
+                </div>
+
+                <div class="pt-2">
+                    <button type="submit" class="w-full bg-[#1c1cff] hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition shadow-lg flex items-center justify-center gap-2">
+                        <span>שלח הזמנה באימייל</span>
+                        <!-- אייקון של מעטפה -->
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- חלק תחתון (Footer) -->
+    <footer class="border-t border-slate-900 bg-slate-950 py-6 text-center text-sm text-slate-500">
+        <div class="max-w-6xl mx-auto px-4">
+            <p>© 2026 M.Z.M.A Android. כל הזכויות שמורות.</p>
+            <p class="mt-1 text-xs">האתר משמש ככרטיס ביקור והזמנת עבודה בלבד. אין סליקת אשראי באתר.</p>
+        </div>
+    </footer>
+
+    <script>
+        function sendOrderEmail(event) {
+            event.preventDefault();
+
+            // איסוף הפרטים מהטופס
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const device = document.getElementById('device').value;
+            const versionType = document.getElementById('version_type').value;
+            const notes = document.getElementById('notes').value || "אין הערות מיוחדות";
+
+            // יצירת תוכן המייל
+            const recipient = "DL1230LD@GMAIL.COM";
+            const subject = encodeURIComponent("הזמנה חדשה - גרסה מותאמת לנגן אנדרואיד (M.Z.M.A)");
+            
+            const body = encodeURIComponent(`היי,
+
+ברצוני להזמין גרסה מותאמת אישית לנגן אנדרואיד שברשותי. להלן פרטי ההזמנה שלי:
+
+👤 שם מלא: ${name}
+📞 טלפון ליצירת קשר: ${phone}
+📱 דגם המכשיר: ${device}
+⚙️ סוג הגרסה המבוקשת: ${versionType}
+📝 הערות/דרישות מיוחדות:
+${notes}
+
+אנא צור איתי קשר לתיאום המשך התהליך והעברת תשלום.`);
+
+            // פתיחת תוכנת האימייל עם הנתונים המוכנים
+            window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+        }
+    </script>
+</body>
+</html>
