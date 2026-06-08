@@ -24,9 +24,11 @@
                 <img src="logo.png" alt="M.Z.M.A Logo" class="w-10 h-10 object-contain rounded-md">
                 <div class="text-xl font-bold text-[#1c1cff] tracking-wider">M.Z.M.A <span class="text-slate-300 text-sm font-normal">Android</span></div>
             </div>
-            <nav class="space-x-4 space-x-reverse text-sm md:text-base">
+            <nav class="space-x-4 space-x-reverse text-sm md:text-base flex items-center">
                 <a href="#about" class="hover:text-[#4d4dff] transition">אודות</a>
                 <a href="#features" class="hover:text-[#4d4dff] transition">יתרונות</a>
+                <!-- קישור למתמחים טופ בסרגל הניווט -->
+                <a href="https://mitmachim.top/user/%D7%9E%D7%94-%D7%96%D7%94-%D7%9E%D7%A9%D7%A0%D7%94-%D7%90%D7%94" target="_blank" rel="noopener noreferrer" class="hover:text-[#4d4dff] transition hidden sm:inline-block">מתמחים טופ</a>
                 <a href="#order" class="bg-[#1c1cff] hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded transition">הזמנת גרסה</a>
             </nav>
         </div>
@@ -44,11 +46,22 @@
         <p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-8">
             בנייה והתאמה אישית של גרסאות קושחה (ROMs) ומערכות הפעלה לסטרימרים, מערכות מולטימדיה לרכב ונגני אנדרואיד שונים מבית <span class="text-[#4d4dff] font-semibold">M.Z.M.A</span>. חוויית שימוש מהירה, חלקה ונטולת הפרעות.
         </p>
-        <div class="flex gap-4">
-            <a href="#order" class="bg-[#1c1cff] hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg shadow-blue-900/20 transition text-lg">
+        
+        <!-- כפתורי הנעה לפעולה מעודכנים -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-md sm:max-w-none">
+            <a href="#order" class="bg-[#1c1cff] hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg shadow-blue-900/20 transition text-lg text-center">
                 להזמנת גרסה מותאמת
             </a>
-            <a href="#about" class="border border-slate-700 hover:border-slate-500 py-3 px-8 rounded-lg transition text-lg">
+            <!-- כפתור לפרופיל מתמחים טופ -->
+            <a href="https://mitmachim.top/user/%D7%9E%D7%94-%D7%96%D7%94-%D7%9E%D7%A9%D7%A0%D7%94-%D7%90%D7%94" target="_blank" rel="noopener noreferrer" class="border border-blue-600/50 hover:border-blue-500 hover:bg-blue-950/20 text-blue-400 py-3 px-8 rounded-lg transition text-lg text-center flex items-center justify-center gap-2">
+                <span>הפרופיל שלי במתמחים טופ</span>
+                <!-- אייקון חץ חיצוני -->
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                </svg>
+            </a>
+            <a href="#about" class="border border-slate-700 hover:border-slate-500 py-3 px-8 rounded-lg transition text-lg text-center">
                 קרא עוד
             </a>
         </div>
@@ -114,7 +127,7 @@
 
                 <div>
                     <label for="device" class="block text-sm font-medium text-slate-300 mb-1">דגם המכשיר / הנגן שברשותך *</label>
-                    <input type="text" id="device" required placeholder="לדוגמה: m36 plus,m393..." class="w-full bg-slate-950 border border-slate-850 rounded-lg py-2.5 px-4 text-slate-100 text-right focus:outline-none focus:border-[#1c1cff] transition">
+                    <input type="text" id="device" required placeholder="לדוגמה: M36 PLUS, מולטימדיה לרכב דגם X..." class="w-full bg-slate-950 border border-slate-850 rounded-lg py-2.5 px-4 text-slate-100 text-right focus:outline-none focus:border-[#1c1cff] transition">
                 </div>
 
                 <div>
