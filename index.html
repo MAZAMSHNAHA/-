@@ -25,6 +25,16 @@
         body {
             font-family: 'Assistant', sans-serif;
         }
+        .logo-box {
+            background: linear-gradient(135deg, #1c1cff 0%, #4d4dff 100%);
+            padding: 30px;
+            border-radius: 15px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 180px;
+            min-height: 180px;
+        }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-100 flex flex-col min-h-screen">
@@ -33,9 +43,9 @@
     <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <!-- שימוש בלוגו בסרגל הניווט -->
-                <img src="logo.png" alt="M.Z.M.A Logo" class="w-10 h-10 object-contain rounded-md">
-                <div class="text-xl font-bold text-[#1c1cff] tracking-wider">M.Z.M.A <span class="text-slate-300 text-sm font-normal">Android</span></div>
+                <!-- לוגו בטקסט -->
+                <div class="text-2xl font-bold text-[#1c1cff] tracking-wider">M.Z.M.A</div>
+                <div class="text-xl font-bold text-[#4d4dff] tracking-wider">Android</div>
             </div>
             <nav class="space-x-4 space-x-reverse text-sm md:text-base flex items-center">
                 <a href="#about" class="hover:text-[#4d4dff] transition">אודות</a>
@@ -49,12 +59,20 @@
 
     <!-- אזור ראשי (Hero) -->
     <section class="max-w-6xl mx-auto px-4 py-12 md:py-20 flex flex-col items-center text-center">
-        <!-- תמונת לוגו מרכזית גדולה יותר -->
-        <div class="mb-6">
-            <img src="logo.png" alt="M.Z.M.A Android" class="w-32 h-32 md:w-40 md:h-40 object-contain mx-auto drop-shadow-[0_0_15px_rgba(28,28,255,0.3)]">
+        <!-- לוגו בצורה גרפית ללא תמונה -->
+        <div class="mb-8">
+            <div class="logo-box mx-auto">
+                <div class="flex flex-col gap-3 items-center">
+                    <div class="flex gap-2">
+                        <div class="w-10 h-6 bg-white rounded"></div>
+                        <div class="w-10 h-6 bg-white rounded"></div>
+                    </div>
+                    <div class="w-6 h-6 bg-white rounded"></div>
+                </div>
+            </div>
         </div>
         
-        <span class="bg-[#1c1cff]/10 text-[#4d4dff] text-xs font-semibold px-3 py-1 rounded-full mb-4 border border-[#1c1cff]/20">פיתוח, התאמה וייעול למערכות אנדרואיד</span>
+        <span class="bg-[#1c1cff]/10 text-[#4d4dff] text-xs font-semibold px-3 py-1 rounded-full mb-4 border border-[#1c1cff]/20">פיתוח, התאמה וייעול ל��ערכות אנדרואיד</span>
         <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">הפק את המרב מנגן האנדרואיד שלך</h1>
         <p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-8">
             בנייה והתאמה אישית של גרסאות קושחה (ROMs), פיתוח אפליקציות מותאמות וייעול מערכות הפעלה לסטרימרים ומערכות מיוחדות.
@@ -344,7 +362,7 @@
     <!-- חלק תחתון (Footer) -->
     <footer class="border-t border-slate-900 bg-slate-950 py-6 text-center text-sm text-slate-500">
         <div class="max-w-6xl mx-auto px-4">
-            <p>© 2026 M.Z.M.A Android. כל הזכויות שמורות.</p>
+            <p>© 2026 M.Z.M.A Android. כל הזכויות שמו��ות.</p>
             <p class="mt-1 text-xs">האתר משמש ככרטיס ביקור והזמנת עבודה בלבד. אין סליקת אשראי באתר.</p>
             <p class="mt-2 text-xs text-slate-600">
                 <a href="#" class="hover:text-slate-400 transition">תנאי שימוש</a> | 
@@ -453,7 +471,7 @@ ${requirements}
 הערות נוספות:
 ${notes}
 
-אנא צור איתי קש�� לתיאום המשך התהליך, התאמת תכנון וקביעת תאריך כניסה וסכום תשלום.`);
+אנא צור איתי קשר לתיאום המשך התהליך, התאמת תכנון וקביעת תאריך כניסה וסכום תשלום.`);
             }
 
             // פתיחת Gmail בכרטיסייה חדשה
