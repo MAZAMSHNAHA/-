@@ -14,9 +14,7 @@
     <meta property="og:type" content="website">
     
     <!-- Favicon - הלוגו בכרטיסיית הדפדפן -->
-    <link rel="icon" type="image/png" href="logo.png">
-    <link rel="shortcut icon" href="logo.png">
-    <link rel="apple-touch-icon" href="logo.png">
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%231c1cff' width='100' height='100' rx='20'/><text x='50' y='60' font-size='60' font-weight='bold' fill='white' text-anchor='middle' font-family='Arial'>M</text></svg>">
     <!-- שימוש ב-Tailwind CSS לעיצוב מהיר ומודרני -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- פונט Google Assistant לעברית -->
@@ -25,15 +23,38 @@
         body {
             font-family: 'Assistant', sans-serif;
         }
-        .logo-box {
+        
+        .logo-gradient {
             background: linear-gradient(135deg, #1c1cff 0%, #4d4dff 100%);
-            padding: 30px;
-            border-radius: 15px;
-            display: inline-flex;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .logo-gradient::before {
+            content: 'M';
+            position: absolute;
+            font-size: 120px;
+            font-weight: 900;
+            color: rgba(255, 255, 255, 0.15);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            letter-spacing: -10px;
+        }
+        
+        .logo-text {
+            position: relative;
+            z-index: 10;
+            display: flex;
             align-items: center;
             justify-content: center;
-            min-width: 180px;
-            min-height: 180px;
+            width: 100%;
+            height: 100%;
+            font-size: 48px;
+            font-weight: 900;
+            color: white;
+            text-shadow: 0 4px 15px rgba(28, 28, 255, 0.3);
+            letter-spacing: 2px;
         }
     </style>
 </head>
@@ -43,9 +64,14 @@
     <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <!-- לוגו בטקסט -->
-                <div class="text-2xl font-bold text-[#1c1cff] tracking-wider">M.Z.M.A</div>
-                <div class="text-xl font-bold text-[#4d4dff] tracking-wider">Android</div>
+                <!-- לוגו בעיצוב מודרני -->
+                <div class="logo-gradient w-12 h-12 rounded-lg flex items-center justify-center">
+                    <span class="text-white font-black text-lg">M</span>
+                </div>
+                <div>
+                    <div class="text-lg font-black text-[#1c1cff] leading-none">M.Z.M.A</div>
+                    <div class="text-xs font-bold text-[#4d4dff]">Android</div>
+                </div>
             </div>
             <nav class="space-x-4 space-x-reverse text-sm md:text-base flex items-center">
                 <a href="#about" class="hover:text-[#4d4dff] transition">אודות</a>
@@ -59,20 +85,14 @@
 
     <!-- אזור ראשי (Hero) -->
     <section class="max-w-6xl mx-auto px-4 py-12 md:py-20 flex flex-col items-center text-center">
-        <!-- לוגו בצורה גרפית ללא תמונה -->
+        <!-- לוגו גדול מודרני -->
         <div class="mb-8">
-            <div class="logo-box mx-auto">
-                <div class="flex flex-col gap-3 items-center">
-                    <div class="flex gap-2">
-                        <div class="w-10 h-6 bg-white rounded"></div>
-                        <div class="w-10 h-6 bg-white rounded"></div>
-                    </div>
-                    <div class="w-6 h-6 bg-white rounded"></div>
-                </div>
+            <div class="logo-gradient w-40 h-40 rounded-3xl flex items-center justify-center shadow-2xl" style="box-shadow: 0 0 40px rgba(28, 28, 255, 0.4);">
+                <span class="logo-text">M</span>
             </div>
         </div>
         
-        <span class="bg-[#1c1cff]/10 text-[#4d4dff] text-xs font-semibold px-3 py-1 rounded-full mb-4 border border-[#1c1cff]/20">פיתוח, התאמה וייעול ל��ערכות אנדרואיד</span>
+        <span class="bg-[#1c1cff]/10 text-[#4d4dff] text-xs font-semibold px-3 py-1 rounded-full mb-4 border border-[#1c1cff]/20">פיתוח, התאמה וייעול למערכות אנדרואיד</span>
         <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">הפק את המרב מנגן האנדרואיד שלך</h1>
         <p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-8">
             בנייה והתאמה אישית של גרסאות קושחה (ROMs), פיתוח אפליקציות מותאמות וייעול מערכות הפעלה לסטרימרים ומערכות מיוחדות.
@@ -362,7 +382,7 @@
     <!-- חלק תחתון (Footer) -->
     <footer class="border-t border-slate-900 bg-slate-950 py-6 text-center text-sm text-slate-500">
         <div class="max-w-6xl mx-auto px-4">
-            <p>© 2026 M.Z.M.A Android. כל הזכויות שמו��ות.</p>
+            <p>© 2026 M.Z.M.A Android. כל הזכויות שמורות.</p>
             <p class="mt-1 text-xs">האתר משמש ככרטיס ביקור והזמנת עבודה בלבד. אין סליקת אשראי באתר.</p>
             <p class="mt-2 text-xs text-slate-600">
                 <a href="#" class="hover:text-slate-400 transition">תנאי שימוש</a> | 
